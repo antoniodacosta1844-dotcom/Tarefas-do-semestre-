@@ -108,7 +108,7 @@
 <!-- T5 -->
 <section id="t5">
     <h2>T5</h2>
-    <p>Conteúdo da tarefa T5.</p>
+    <p>Conteúdo da tarefa  T5.</p>
 </section>
 
 </body>
