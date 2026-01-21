@@ -89,6 +89,20 @@
 
 <!-- T2 -->
 <section id="t2">
+    <h2 class="titulo-t2">T2 – CSS Inline, Interno e Externo</h2>
+
+    <!-- PARÁGRAFO COM CSS INLINE -->
+    <p style="color: green; font-size: 18px;">
+        Este parágrafo usa CSS inline diretamente na tag.
+    </p>
+
+    <p>
+        O título acima está estilizado com CSS interno,
+        e o fundo da página vem de um ficheiro CSS externo.
+    </p>
+</section>
+
+<!-- T3 -->
     <h2>T2</h2>
     <p>Conteúdo da tarefa T2.</p>
 </section>
