@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T4 - Conteúdo Completo</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f1f5f9;
+    }
+
+ 
+    .header {
+      position: sticky;
+      top: 0;
+      background: #0f172a;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #1e293b;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+ 
+    .conteudo {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    img, video, audio {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0f172a;
+    }
+
+ 
+    label {
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0 15px;
+    }
+
+    button {
+      padding: 10px;
+      background: #0f172a;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+     
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #0f172a;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <h1><a href="../index.html">HOME</a></h1>
+
+  <nav>
+    <a href="trimestre1.html">I Trim.</a>
+    <a href="trimestre2.html">II Trim.</a>
+    <a href="trimestre3.html">III Trim.</a>
+  </nav>
+</header>
+
+<div class="conteudo">
+ 
+  <h2>Ficheiros Multimédia</h2>
+
+  <img src="../files/transferir (2).jpeg" alt="Imagem do trabalho">
+
+  <video src="../files/Diboba_-_Dont_Play_(_Danny_Peezy_x_Tio_Edson_x_Mc_Cabinda_X_Uami_Ndongadas_)_Video_Oficial(720p).mp4" controls></video>
+
+  <audio src="../files/01. Anderson Mário - Pobreza (Dj Salaujei DASP na Promo).mp3" controls></audio>
+
+ 
+  <h2>Cadastro de Produtos</h2>
+
+  <form id="formProduto">
+    <label>Nome do Produto</label>
+    <input type="text" id="nome" required>
+
+    <label>Preço</label>
+    <input type="number" id="preco" required>
+
+    <label>Quantidade</label>
+    <input type="number" id="quantidade" required>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+
+  <h2>Produtos Cadastrados</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaProdutos"></tbody>
+  </table>
+
+</div>
+
+<script>
+  const form = document.getElementById("formProduto");
+  const tabela = document.getElementById("tabelaProdutos");
+
+  function carregarTabela() {
+    tabela.innerHTML = "";
+    const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+
+    produtos.forEach(produto => {
+      const linha = document.createElement("tr");
+      linha.innerHTML = `
+        <td>${produto.nome}</td>
+        <td>${produto.preco}</td>
+        <td>${produto.quantidade}</td>
+      `;
+      tabela.appendChild(linha);
+    });
+  }
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const produto = {
+      nome: nome.value,
+      preco: preco.value,
+      quantidade: quantidade.value
+    };
+
+    let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+    produtos.push(produto);
+    localStorage.setItem("produtos", JSON.stringify(produtos));
+
+    form.reset();
+    carregarTabela();
+  });
+
+  carregarTabela();
+</script>
+
+</body>
+</html>
