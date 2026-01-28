@@ -17,31 +17,23 @@
       background: #f1f5f9;
     }
 
+ 
     .header {
       position: sticky;
       top: 0;
-      background: #46516a;
+      background: #0f172a;
       padding: 15px 25px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       z-index: 1000;
+      flex-wrap: wrap;
     }
 
     .header h1 a {
-      text-decoration: none;
-      padding: 8px 16px;
-      background: #46516a;
       color: #fff;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: 0.3s;
-      
-    }
-
-    .header h1 a:hover {
-      background: #585a5e;
-      color: #000;
+      text-decoration: none;
+      font-size: 20px;
     }
 
     .menu-toggle {
@@ -56,35 +48,60 @@
     nav {
       display: flex;
       gap: 10px;
-      text-align: center;
     }
 
     nav a {
       text-decoration: none;
       padding: 8px 16px;
-      background: #46516a;
+      background: #1e293b;
       color: #fff;
       border-radius: 6px;
       font-weight: bold;
       transition: 0.3s;
-      
     }
 
     nav a:hover {
-      background: #585a5e;
+      background: #38bdf8;
       color: #000;
     }
 
+ 
+    main {
+      padding: 40px;
+      display: flex;
+      gap: 40px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+ 
+    .sobre {
+      flex: 1;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .sobre h1 {
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
+
+    .sobre p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      color: #1e293b;
+    }
+
   
-    
-    
     .trimestres {
       width: 100%;
-      max-width: 400px;
-      
-      background: #46516a;
+      max-width: 350px;
+      background: #ffffff;
       padding: 30px;
-     
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .trimestres h2 {
@@ -98,39 +115,31 @@
       margin-bottom: 15px;
       padding: 15px;
       text-align: center;
-      background: #fff;
-      color: #0f172a;
+      background: #0f172a;
+      color: #fff;
       text-decoration: none;
       font-size: 18px;
       font-weight: bold;
-      
+      border-radius: 8px;
       transition: 0.3s;
     }
 
     .trimestres a:hover {
-      background: rgb(91, 94, 96);
+      background: #38bdf8;
       color: #000;
     }
 
+     
     @media (max-width: 768px) {
-      .menu-toggle {
-        display: block;
-      }
+      
 
-      nav {
-        display: none;
+
+      main {
         flex-direction: column;
-        width: 100%;
-        margin-top: 15px;
       }
 
-      nav.active {
-        display: flex;
-      }
-
-      .header {
-        flex-direction: column;
-        align-items: flex-start;
+      .trimestres {
+        max-width: 100%;
       }
     }
   </style>
@@ -153,9 +162,35 @@
 </header>
 
 <main>
-  <div class="trimestres">
-    
+ 
+  <div class="sobre">
+    <h1>SEJA BEM-VINDO AO MEU SITE</h1>
 
+    <p>
+      <strong>Nome:</strong> António Costa <br>
+      <strong>Nº:</strong> 01 <br>
+      <strong>Sala:</strong> 18 <br>
+      <strong>Turma:</strong> ANI <br>
+      <strong>Turno:</strong> Noite <br>
+      <strong>Classe:</strong> 13ª
+    </p>
+
+    <p>
+      Este site foi criado no âmbito dos trabalhos de programação,
+      com a finalidade de aplicar os conhecimentos adquiridos
+      durante as aulas de desenvolvimento web.
+    </p>
+
+    <p>
+      Ao longo das tarefas, foram utilizados conceitos fundamentais
+      de HTML e CSS, promovendo a organização de conteúdos,
+      estruturação de páginas e boas práticas de programação.
+    </p>
+  </div>
+
+ 
+  <div class="trimestres">
+   
     <a href="pag/trimestre1.html">I Trimestre</a>
     <a href="pag/trimestre2.html">II Trimestre</a>
     <a href="pag/trimestre3.html">III Trimestre</a>
@@ -173,4 +208,3 @@
 
 </body>
 </html>
-
