@@ -47,6 +47,167 @@
       font-weight: bold;
     }
 
+    main {
+      padding: 80px 20px;
+       
+      justify-content: center;
+    }
+
+    .tarefa{
+      background: #ffffff;
+      max-width: 800px;
+      width: 100%;
+      padding: 50px 40px;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      text-align: justify;
+    }
+
+    .tarefa h2 {
+      font-size: 30px;
+      color: #b45309;
+      margin-bottom: 30px;
+    }
+
+
+.menu{
+    background:#8BC34A;
+    text-align:center;
+    padding:20px;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.sidebar{
+    background:#8BC34A;
+    text-align:center;
+    padding:50px;
+    margin-top:5px;
+    font-weight:bold;
+}
+
+.fotos{
+    display:flex;
+    justify-content:space-around;
+    margin:30px 0;
+}
+
+.foto{
+    width:150px;
+    height:150px;
+    background:#8BC34A;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.textos{
+    display:flex;
+    justify-content:space-between;
+}
+
+.texto{
+    width:48%;
+    background:#8BC34A;
+    padding:40px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.footer{
+    background:#8BC34A;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0f172a;
+    }
+
+    /* LISTAS */
+    .listas {
+      margin-bottom: 50px;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .listas h2 {
+      color: #df0a2d;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 25px;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      color: #0f172a;
+      list-style: square;
+    }
+
+    ol {
+      margin-left: 25px;
+    }
+
+    ol li {
+      margin-bottom: 8px;
+      color: #0f172a;
+      font-weight: 500;
+    }
+
+    /* TABELAS */
+    .tabelas {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .tabelas h2 {
+      color: #5310f0;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th {
+      background: #0b28ce;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #bae6fd;
+      color: #0f172a;
+    }
+
+    tr:nth-child(even) {
+      background: #f1f5f9;
+    }
+
+    caption {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #0f172a;
+    }
+
+
   
   </style>
 </head>
@@ -63,6 +224,284 @@
   </nav>
 </header>
 
+<main>
+
+<div class="tarefa">
+
+     <center><h1>O CSS</h1><br></center>
+    
+    <p><strong>1. O que é CSS?</strong></p><br>
+    <p>CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata).
+O CSS é uma linguagem usada para dar estilo às páginas Web criadas com HTML.
+Enquanto o HTML serve para estruturar o conteúdo (textos, imagens, botões),
+ o CSS é responsável pela aparência visual da página.</p><br>
+
+  <p><strong>Exemplos do que o CSS faz:</strong></p><br>
+    <p>• Mudar cores dos textos;<br>
+• Alterar o tamanho das letras;<br>
+• Definir cores de fundo;<br>
+• Posicionar elementos na página.</p><br>
+
+  <p><strong>2. Importância do CSS no Desenvolvimento Web <br> <br> 
+    O CSS é muito importante porque:</strong></p><br>
+    <p>• Melhora a aparência dos sites, tornando-os mais bonitos 
+      e organizados;<br>
+• Facilita a leitura do conteúdo;<br>
+• Permite a separação entre conteúdo e design: o HTML → conteúdo
+o CSS → aparência<br>
+• Ajuda a manter e actualizar os sites com mais facilidade;<br>
+• Garante uma melhor experiência do utilizad</p><br>
+
+ <p><strong>3. Tipos de Folhas de Estilo CSS <br> <br> 
+  Existem três formas principais de aplicar CSS em uma página HTML: <br> <br>
+3.1 CSS Inline</strong></p><br>
+    <p>O CSS inline é aplicado directamente dentro da tag HTML.
+Exemplo:
+<"p style="color: blue;">"Este texto é azul<"/p></p><br>
+<p>
+  Características: <br>
+• É simples e rápido;<br>
+• Serve para pequenas alterações;<br>
+• Não é recomendado para páginas grandes<br>
+</p>
+
+ <p><strong>3.2 CSS Interna (Internal CSS) <br> <br> 
+ <p>
+  O CSS interno é escrito dentro da própria página HTML, 
+  usando a tag <!style>. <br>
+Exemplo: <br>
+<"style><br>
+ p {<br>
+ color: green;<br>
+ }<br>
+</"style><br>
+ </p><br>
+
+ <p>
+  Características:<br>
+• Organiza melhor o código que o CSS inline;<br>
+• Aplica estilo a vários elementos ao mesmo tempo;<br>
+• É usado quando o estilo é apenas para uma página<br>
+ </p>
+    
+
+   
+</div>
+
+<br><br>
+
+<div class="tarefa">
+    
+     <div class="ab">
+    <h1 style="color: #316ac5;">SINTAXE BÁSICA DO CSS E SELETORES</h1><br>
+
+    <p><strong>1. Sintaxe Básica do CSS</strong></p><br>
+
+    <p>
+      O CSS é escrito através de regras de estilo.
+      Cada regra é composta por um seletor e um bloco de declarações.
+      O seletor indica qual elemento HTML será estilizado,
+      enquanto as declarações definem como esse elemento irá aparecer.
+    </p><br>
+
+    <p><strong>Estrutura básica de uma regra CSS:</strong></p><br>
+
+    <p>
+      seletor { <br>
+      &nbsp;&nbsp;propriedade: valor; <br>
+      }
+    </p><br>
+
+    <p>
+      Exemplos do que compõe a sintaxe do CSS:<br>
+      • Seletor – escolhe o elemento HTML;<br>
+      • Propriedade – define o que será alterado;<br>
+      • Valor – indica como será a alteração;<br>
+      • Cada declaração termina com ponto e vírgula (;).<br>
+    </p><br>
+  </div><br>
+
+  <div class="ab">
+    <p><strong>2. Seletores Simples em CSS <br><br>
+      Os seletores são usados para indicar quais elementos HTML receberão estilo.
+      Os principais seletores simples são:</strong>
+    </p><br>
+
+    <p>
+      • Seletor de elemento (tag): seleciona elementos pelo nome da tag;<br>
+      • Seletor de classe: seleciona elementos que possuem uma classe específica;<br>
+      • Seletor de ID: seleciona um elemento com identificador único;<br>
+      • Seletor universal: seleciona todos os elementos da página.<br>
+    </p><br>
+  </div><br>
+
+  <div class="ab">
+    <p><strong>3. Tipos de Seletores Simples <br><br>
+      3.1 Seletor de Elemento</strong>
+    </p><br>
+
+    <p>
+      O seletor de elemento utiliza o nome da tag HTML
+      e aplica o estilo a todos os elementos desse tipo.
+      <br><br>
+      Exemplo:
+    </p>
+
+    <p>
+      p { <br>
+      &nbsp;&nbsp;color: blue; <br>
+      }
+    </p><br>
+
+    <p>
+      Características:<br>
+      • Aplica o estilo a todas as tags iguais;<br>
+      • É simples e muito utilizado;<br>
+      • Possui baixa prioridade em relação a classes e IDs.<br>
+    </p><br>
+  </div><br>
+
+  <div class="ab">
+    <p><strong>3.2 Seletor de Classe</strong></p><br>
+
+    <p>
+      O seletor de classe é identificado por um ponto (.)
+      e permite aplicar estilos a vários elementos diferentes.
+      <br><br>
+      Exemplo:
+    </p>
+
+    <p>
+      .texto { <br>
+      &nbsp;&nbsp;font-size: 18px; <br>
+      }
+    </p><br>
+
+    <p>
+      Características:<br>
+      • Pode ser reutilizado em vários elementos;<br>
+      • Usa o ponto (.) antes do nome;<br>
+      • É muito comum no desenvolvimento web.<br>
+    </p><br>
+  </div><br>
+      <div class="ab">
+    <p><strong>3.3 Seletor de ID</strong></p><br>
+
+    <p>
+      O seletor de ID utiliza o símbolo # e identifica
+      um único elemento na página HTML.
+      <br><br>
+      Exemplo:
+    </p>
+
+    <p>
+      #principal { <br>
+      &nbsp;&nbsp;background-color: lightgray; <br>
+      }
+    </p><br>
+
+    <p>
+      Características:<br>
+      • Deve ser único na página;<br>
+      • Usa o símbolo #;<br>
+      • Possui maior prioridade que classes e elementos.<br>
+    </p><br>
+  </div>
+    
+
+</div>
+
+
+<br><br>
+
+<div class="tarefa">
+    
+<div class="menu">MENU</div>
+
+    <div class="sidebar">SIDE BAR</div>
+
+    <div class="fotos">
+        <div class="foto">FOTO</div>
+        <div class="foto">FOTO</div>
+        <div class="foto">FOTO</div>
+    </div>
+
+    <div class="textos">
+        <div class="texto">TEXTO</div>
+        <div class="texto">TEXTO</div>
+    </div>
+
+    <div class="footer">FOOTER</div>
+
+</div>
+
+
+<br><br>
+
+<div class="tarefa">
+
+  <div class="titulo">
+    <h1>Listas e Tabelas em HTML</h1>
+  </div>
+
+ 
+  <section class="listas">
+    <h2>Lista Não Ordenada</h2>
+    <ul>
+      <li>HTML - Estrutura da Página</li>
+      <li>CSS - Estilização</li>
+      <li>JavaScript - Interatividade</li>
+    </ul>
+
+    <h2>Lista Ordenada</h2>
+    <ol>
+      <li>Definir estrutura HTML</li>
+      <li>Adicionar estilização CSS</li>
+      <li>Testar responsividade</li>
+    </ol>
+  </section>
+
+ 
+  <section class="tabelas">
+    <h2>Tabela Simples</h2>
+    <table>
+      <caption>Notas dos Alunos</caption>
+      <tr>
+        <th>Nome</th>
+        <th>Disciplina</th>
+        <th>Nota</th>
+      </tr>
+      <tr>
+        <td>maria</td>
+        <td>MATEMTICA</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>antonio</td>
+        <td>TLP</td>
+        <td>14</td>
+      </tr>
+    </table>
+
+    <h2>Tabela Mesclada</h2>
+    <table>
+      <caption>Horário Escolar</caption>
+      <tr>
+        <th>Dia</th>
+        <th colspan="2">Manhã</th>
+      </tr>
+      <tr>
+        <td rowspan="2">SEXTA</td>
+        <td>HTML</td>
+        <td>JavaScript</td>
+      </tr>
+      <tr>
+        <td colspan="2">Projeto</td>
+      </tr>
+    </table>
+  </section>
+</div>
+</main>
 
 
 </body>
