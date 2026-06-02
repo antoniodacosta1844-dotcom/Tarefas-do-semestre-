@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Trimestre</title>
 
-    <title>Sistema de Média Escolar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-    <style>
+    body {
+      background: #f1f5f9;
+    }
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
 
-        body{
-            background: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+    .header {
+      position: sticky;
+      top: 0;
+      background: #0f172a;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        .container{
-            width: 420px;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }
+    .header h1 a {
+      color: #fff;
+      text-decoration: none;
+    }
 
-        h1{
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #1e293b;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+    }
 
         input{
             width: 100%;
@@ -85,10 +95,13 @@
             font-weight: bold;
         }
 
-    </style>
 
+
+  </style>
 </head>
+
 <body>
+
 <header class="header">
   <h1><a href="../index.html">HOME</a></h1>
 
@@ -98,7 +111,6 @@
     <a href="trimestre3.html">III Trim.</a>
   </nav>
 </header>
-
     <div class="container">
 
         <h1>Site de cálculo d média</h1>
@@ -209,6 +221,9 @@
         }
 
     </script>
+
+
+
 
 </body>
 </html>
